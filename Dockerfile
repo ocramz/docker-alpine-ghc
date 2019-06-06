@@ -14,4 +14,4 @@ WORKDIR ghc-${GHC_VERSION}
 
 RUN ./configure --prefix=${GHC_INSTALL_PATH} && \
     make install && \
-    /opt/ghc/bin/ghc --help
+    ${GHC_INSTALL_PATH}/bin/ghc --help
