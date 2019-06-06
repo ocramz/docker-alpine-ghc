@@ -3,5 +3,5 @@ language: C
 services:
   - docker
   
-install:
+script:
   - docker build .
