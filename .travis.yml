@@ -1,0 +1,7 @@
+language: C
+
+services:
+  - docker
+  
+install:
+  - docker build .
