@@ -13,4 +13,5 @@ RUN apk update && \
 WORKDIR ghc-${GHC_VERSION}
 
 RUN ./configure --prefix=${GHC_INSTALL_PATH} && \
-    make install
+    make install && \
+    /opt/ghc/bin/ghc --help
